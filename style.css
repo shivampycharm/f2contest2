@@ -1,0 +1,71 @@
+body {
+    margin: 5vh 3vw;
+}
+
+.form-input label {
+    display: inline-block;
+    width: 130px;
+}
+
+.form-input {
+    display: flex;
+    justify-content: space-between;
+    gap: 2vw;
+}
+
+.form-input input {
+    width: 30vw;
+    min-width: 300px;
+    margin-top: 1vh;
+    padding: 1vh 2vw;
+    box-sizing: border-box;
+    font-size: 1rem;
+}
+
+form button {
+    margin-top: 3vh;
+    padding: 10px 45px;
+    font-size: 1rem;
+}
+
+#success-message {
+    color: green;
+}
+
+#error-message {
+    color: red;
+}
+
+
+table {
+    width: 70%;
+    text-align: center;
+    border-collapse: collapse;
+}
+
+table th {
+    color: #f2f2f2;
+    background-color: #4caf50;
+}
+
+table td {
+    border: 1px solid #ddd;
+}
+
+table tr:nth-child(even) {
+    background-color: #f2f2f2;
+}
+
+table tr:hover {
+    background-color: #ddd;
+}
+
+@media screen and (max-width:996px) {
+    .form-input {
+        flex-direction: column;
+    }
+
+    .form-input input {
+        width: 70%;
+    }
+}
